@@ -24,7 +24,7 @@ public class TimeDurationTest {
         TimeDuration duration = new TimeDuration("150ms");
         Assert.assertEquals("150ms", duration.value());
         Assert.assertEquals(150, duration.getMillis());
-        Assert.assertEquals(TokenType.TEXT, duration.type());
+        Assert.assertEquals(TokenType.TIME_DURATION, duration.type());
     }
 
     @Test
@@ -32,7 +32,7 @@ public class TimeDurationTest {
         TimeDuration duration = new TimeDuration("2.1s");
         Assert.assertEquals("2.1s", duration.value());
         Assert.assertEquals(2100, duration.getMillis());
-        Assert.assertEquals(TokenType.TEXT, duration.type());
+        Assert.assertEquals(TokenType.TIME_DURATION, duration.type());
     }
 
     @Test(expected = IllegalArgumentException.class)

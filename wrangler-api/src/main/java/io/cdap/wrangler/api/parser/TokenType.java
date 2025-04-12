@@ -13,7 +13,6 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-
 package io.cdap.wrangler.api.parser;
 
 import io.cdap.wrangler.api.annotations.PublicEvolving;
@@ -40,6 +39,8 @@ import java.io.Serializable;
  * @see Expression
  * @see Text
  * @see TextList
+ * @see ByteSize
+ * @see TimeDuration
  */
 @PublicEvolving
 public enum TokenType implements Serializable {
@@ -79,7 +80,7 @@ public enum TokenType implements Serializable {
   /**
    * Represents the enumerated type for the object of type {@code BoolList} type.
    * This type is associated with the rule that is a collection of {@code Boolean} values
-   * separated by comman(,). E.g.
+   * separated by comma(,). E.g.
    * <code>
    *   ColumnName[,ColumnName]*
    * </code>
@@ -104,7 +105,6 @@ public enum TokenType implements Serializable {
    * <code>
    *   Numeric[,Numeric]*
    * </code>
-   *
    */
   NUMERIC_LIST,
 
@@ -152,5 +152,21 @@ public enum TokenType implements Serializable {
    * Represents the enumerated type for the object of type {@code String} with restrictions
    * on characters that can be present in a string.
    */
-  IDENTIFIER
+  IDENTIFIER,
+
+  /**
+   * Represents the enumerated type for the object of type {@code ByteSize}.
+   * This type is associated with a token that represents a byte size value,
+   * such as "10KB" or "1.5MB", consisting of a number followed by a unit
+   * (e.g., KB, MB, GB).
+   */
+  BYTE_SIZE,
+
+  /**
+   * Represents the enumerated type for the object of type {@code TimeDuration}.
+   * This type is associated with a token that represents a time duration value,
+   * such as "150ms" or "2.1s", consisting of a number followed by a time unit
+   * (e.g., ms, s, min, h, d).
+   */
+  TIME_DURATION
 }

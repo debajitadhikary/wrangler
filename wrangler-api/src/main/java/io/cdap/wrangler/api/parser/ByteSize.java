@@ -40,7 +40,7 @@ public class ByteSize implements Token {
 
     @Override
     public TokenType type() {
-        return TokenType.TEXT; // Temporary placeholder until we define BYTE_SIZE in TokenType.java
+        return TokenType.BYTE_SIZE;
     }
 
     public long getBytes() {

@@ -24,20 +24,20 @@ public class ByteSizeTest {
         ByteSize size = new ByteSize("10KB");
         Assert.assertEquals("10KB", size.value());
         Assert.assertEquals(10240, size.getBytes());
-        Assert.assertEquals(TokenType.TEXT, size.type());
+        Assert.assertEquals(TokenType.BYTE_SIZE, size.type());
     }
 
     @Test
     public void testDecimalByteSize() {
         ByteSize size = new ByteSize("1.5MB");
         Assert.assertEquals("1.5MB", size.value());
-        Assert.assertEquals(1572864, size.getBytes()); // 1.5 * 1024 * 1024
-        Assert.assertEquals(TokenType.TEXT, size.type());
+        Assert.assertEquals(1572864, size.getBytes());
+        Assert.assertEquals(TokenType.BYTE_SIZE, size.type());
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testInvalidUnit() {
         ByteSize size = new ByteSize("10XYZ");
-        size.getBytes(); // Trigger validation
+        size.getBytes();
     }
 }

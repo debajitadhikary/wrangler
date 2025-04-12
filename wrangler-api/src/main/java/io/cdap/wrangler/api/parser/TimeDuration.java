@@ -40,7 +40,7 @@ public class TimeDuration implements Token {
 
     @Override
     public TokenType type() {
-        return TokenType.TEXT;
+        return TokenType.TIME_DURATION;
     }
 
     public long getMillis() {
