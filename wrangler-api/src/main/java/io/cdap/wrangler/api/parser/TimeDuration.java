@@ -19,58 +19,62 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonPrimitive;
 
 /**
- * A class to represent a time duration value like "150ms" or "2.1s".
+ * A token representing a time duration with a value and unit.
  */
 public class TimeDuration implements Token {
-    private final String value;
+  private final String value;
 
-    public TimeDuration(String value) {
-        this.value = value;
+  public TimeDuration(String value) {
+    this.value = value;
+  }
+
+  @Override
+  public String value() {
+    return value;
+  }
+
+  @Override
+  public JsonElement toJson() {
+    return new JsonPrimitive(value);
+  }
+
+  @Override
+  public TokenType type() {
+    return TokenType.TIME_DURATION;
+  }
+
+  public long getMillis() {
+    String input = value.trim().toLowerCase();
+    String numStr = input.replaceAll("[a-z]+", "");
+    String unit = input.replaceAll("[0-9.]+", "");
+
+    if (!(unit.equals("ms") || unit.equals("s") || unit.equals("min") ||
+          unit.equals("h") || unit.equals("d"))) {
+      throw new IllegalArgumentException("Unknown time unit: " + unit);
     }
 
-    @Override
-    public String value() {
-        return value;
+    double number;
+    try {
+      number = Double.parseDouble(numStr);
+    } catch (NumberFormatException e) {
+      throw new IllegalArgumentException("Invalid number in time duration: " + value, e);
     }
 
-    @Override
-    public JsonElement toJson() {
-        return new JsonPrimitive(value);
+    if (unit.equals("ms")) {
+      return (long) number;
+    } else if (unit.equals("s")) {
+      return (long) (number * 1000);
+    } else if (unit.equals("min")) {
+      return (long) (number * 60 * 1000);
+    } else if (unit.equals("h")) {
+      return (long) (number * 60 * 60 * 1000);
+    } else if (unit.equals("d")) {
+      return (long) (number * 24 * 60 * 60 * 1000);
     }
+    throw new IllegalArgumentException("Unknown time unit: " + unit);
+  }
 
-    @Override
-    public TokenType type() {
-        return TokenType.TIME_DURATION;
-    }
-
-    public long getMillis() {
-        String input = value.trim().toLowerCase();
-        String numStr = input.replaceAll("[a-z]+", "");
-        String unit = input.replaceAll("[0-9.]+", "");
-
-        if (!(unit.equals("ms") || unit.equals("s") || unit.equals("min") ||
-              unit.equals("h") || unit.equals("d"))) {
-            throw new IllegalArgumentException("Unknown time unit: " + unit);
-        }
-
-        double number;
-        try {
-            number = Double.parseDouble(numStr);
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid number in time duration: " + value, e);
-        }
-
-        if (unit.equals("ms")) {
-            return (long) number;
-        } else if (unit.equals("s")) {
-            return (long) (number * 1000);
-        } else if (unit.equals("min")) {
-            return (long) (number * 60 * 1000);
-        } else if (unit.equals("h")) {
-            return (long) (number * 60 * 60 * 1000);
-        } else if (unit.equals("d")) {
-            return (long) (number * 24 * 60 * 60 * 1000);
-        }
-        throw new IllegalArgumentException("Unknown time unit: " + unit);
-    }
+  public long getNanos() {
+    return getMillis() * 1_000_000L;
+  }
 }

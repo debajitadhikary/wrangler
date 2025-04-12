@@ -1,29 +1,40 @@
 /*
- *  Copyright © 2017-2019 Cask Data, Inc.
+ * Copyright © 2017-2025 Cask Data, Inc.
  *
- *  Licensed under the Apache License, Version 2.0 (the "License"); you may not
- *  use this file except in compliance with the License. You may obtain a copy of
- *  the License at
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
  *
- *  http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- *  License for the specific language governing permissions and limitations under
- *  the License.
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
  */
-
 package io.cdap.wrangler.parser;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+import org.junit.Assert;
+import org.junit.Test;
 
 import io.cdap.wrangler.TestingRig;
 import io.cdap.wrangler.api.CompileException;
 import io.cdap.wrangler.api.CompileStatus;
 import io.cdap.wrangler.api.Compiler;
-import org.junit.Assert;
-import org.junit.Test;
+import io.cdap.wrangler.api.RecipePipeline;
+import io.cdap.wrangler.api.RecipeSymbol;
+import io.cdap.wrangler.api.TokenGroup;
+import io.cdap.wrangler.api.parser.ColumnName;
+import io.cdap.wrangler.api.parser.Text;
+import io.cdap.wrangler.api.parser.Token;
 
-import java.util.Set;
+import static org.junit.Assert.assertEquals;
+
 
 /**
  * Tests {@link RecipeCompiler}
@@ -38,9 +49,9 @@ public class RecipeCompilerTest {
       Compiler compiler = new RecipeCompiler();
       CompileStatus status = compiler.compile(
           "parse-as-csv :body ' ' true;\n"
-        + "set-column :abc, :edf;\n"
-        + "send-to-error exp:{ window < 10 } ;\n"
-        + "parse-as-simple-date :col 'yyyy-mm-dd' :col 'test' :col2,:col4,:col9 10 exp:{test < 10};\n"
+          + "set-column :abc, :edf;\n"
+          + "send-to-error exp:{ window < 10 } ;\n"
+          + "parse-as-simple-date :col 'yyyy-mm-dd' :col 'test' :col2,:col4,:col9 10 exp:{test < 10};\n"
       );
 
       Assert.assertNotNull(status.getSymbols());
@@ -58,7 +69,6 @@ public class RecipeCompilerTest {
       "${macro${number}}",
       "parse-as-csv :body '${delimiter}' true;"
     };
-
     CompileStatus status = TestingRig.compile(recipe);
     Assert.assertEquals(true, status.isSuccess());
   }
@@ -68,7 +78,6 @@ public class RecipeCompilerTest {
     String[] recipe = new String[] {
       "${directives}"
     };
-
     CompileStatus status = TestingRig.compile(recipe);
     Assert.assertEquals(true, status.isSuccess());
   }
@@ -214,5 +223,50 @@ public class RecipeCompilerTest {
     CompileStatus compile = TestingRig.compile(recipe);
     Set<String> loadableDirectives = compile.getSymbols().getLoadableDirectives();
     Assert.assertEquals(4, loadableDirectives.size());
+  }
+
+  // testByteSizeParse
+  @Test
+  public void testByteSizeParse() throws Exception {
+    String[] directives = new String[] { "parse-byte-size size" };
+    CompileStatus status = compiler.compile(directives);
+    RecipeSymbol symbol = status.getCompiledUnit();
+    Iterator<TokenGroup> iterator = symbol.iterator();
+    TokenGroup group = iterator.next();
+    Iterator<Token> tokens = group.iterator();
+    Assert.assertEquals("parse-byte-size", tokens.next().value());
+    Assert.assertEquals("size", tokens.next().value());
+    Assert.assertEquals(2, group.getTokens().size());
+  }
+
+  @Test
+  public void testTimeDurationParse() throws Exception {
+    String[] directives = new String[] { "parse-time-duration time" };
+    CompileStatus status = compiler.compile(directives);
+    RecipeSymbol symbol = status.getCompiledUnit();
+    Iterator<TokenGroup> iterator = symbol.iterator();
+    TokenGroup group = iterator.next();
+    Iterator<Token> tokens = group.iterator();
+    Assert.assertEquals("parse-time-duration", tokens.next().value());
+    Assert.assertEquals("time", tokens.next().value());
+    Assert.assertEquals(2, group.getTokens().size());
+  }
+
+  @Test
+  public void testAggregateStatsParse() throws Exception {
+    String[] directives = new String[] { "aggregate-stats :data_transfer_size :response_time total_size_mb total_time_sec MB s" };
+    CompileStatus status = compiler.compile(directives);
+    RecipeSymbol symbol = status.getCompiledUnit();
+    Iterator<TokenGroup> iterator = symbol.iterator();
+    TokenGroup group = iterator.next();
+    List<Token> tokens = group.getTokens();
+    Assert.assertEquals("aggregate-stats", tokens.get(0).value());
+    Assert.assertEquals(":data_transfer_size", tokens.get(1).value());
+    Assert.assertEquals(":response_time", tokens.get(2).value());
+    Assert.assertEquals("total_size_mb", tokens.get(3).value());
+    Assert.assertEquals("total_time_sec", tokens.get(4).value());
+    Assert.assertEquals("MB", tokens.get(5).value());
+    Assert.assertEquals("s", tokens.get(6).value());
+    Assert.assertEquals(7, tokens.size());
   }
 }

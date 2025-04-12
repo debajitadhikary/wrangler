@@ -67,6 +67,7 @@ directive
      | numberRanges
      | properties
    )*?
+ | AGGREGATE_STATS column column column column (text)? (text)?
  ;
 
 ifStatement
@@ -204,6 +205,8 @@ stringList
 identifierList
  : Identifier (',' Identifier)*
  ;
+
+AGGREGATE_STATS : 'aggregate-stats' ;
 
 /*
  * Following are the Lexer Rules used for tokenizing the recipe.
