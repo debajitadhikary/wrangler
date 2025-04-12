@@ -51,12 +51,21 @@ public class ByteSize implements Token {
         // Get unit part (e.g., "kb" from "10KB")
         String unit = input.replaceAll("[0-9.]+", "");
 
+        // Validate unit first
+        if (!(unit.equals("kb") || unit.equals("kib") ||
+              unit.equals("mb") || unit.equals("mib") ||
+              unit.equals("gb") || unit.equals("gib") ||
+              unit.equals("tb") || unit.equals("tib") ||
+              unit.equals("pb") || unit.equals("pib"))) {
+            throw new IllegalArgumentException("Unknown byte unit: " + unit);
+        }
+
         // Convert number to double
         double number;
         try {
             number = Double.parseDouble(numStr);
         } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid number in byte size: " + value);
+            throw new IllegalArgumentException("Invalid number in byte size: " + value, e);
         }
 
         // Convert based on unit
@@ -70,8 +79,8 @@ public class ByteSize implements Token {
             return (long) (number * 1024 * 1024 * 1024 * 1024);
         } else if (unit.equals("pb") || unit.equals("pib")) {
             return (long) (number * 1024 * 1024 * 1024 * 1024 * 1024);
-        } else {
-            throw new IllegalArgumentException("Unknown byte unit: " + unit);
         }
+        // Unreachable due to earlier validation, but kept for safety
+        throw new IllegalArgumentException("Unknown byte unit: " + unit);
     }
 }

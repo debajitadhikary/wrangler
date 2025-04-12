@@ -18,26 +18,26 @@ package io.cdap.wrangler.api.parser;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class ByteSizeTest {
+public class TimeDurationTest {
     @Test
-    public void testBasicByteSize() {
-        ByteSize size = new ByteSize("10KB");
-        Assert.assertEquals("10KB", size.value());
-        Assert.assertEquals(10240, size.getBytes());
-        Assert.assertEquals(TokenType.TEXT, size.type());
+    public void testBasicTimeDuration() {
+        TimeDuration duration = new TimeDuration("150ms");
+        Assert.assertEquals("150ms", duration.value());
+        Assert.assertEquals(150, duration.getMillis());
+        Assert.assertEquals(TokenType.TEXT, duration.type());
     }
 
     @Test
-    public void testDecimalByteSize() {
-        ByteSize size = new ByteSize("1.5MB");
-        Assert.assertEquals("1.5MB", size.value());
-        Assert.assertEquals(1572864, size.getBytes()); // 1.5 * 1024 * 1024
-        Assert.assertEquals(TokenType.TEXT, size.type());
+    public void testDecimalTimeDuration() {
+        TimeDuration duration = new TimeDuration("2.1s");
+        Assert.assertEquals("2.1s", duration.value());
+        Assert.assertEquals(2100, duration.getMillis());
+        Assert.assertEquals(TokenType.TEXT, duration.type());
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testInvalidUnit() {
-        ByteSize size = new ByteSize("10XYZ");
-        size.getBytes(); // Trigger validation
+        TimeDuration duration = new TimeDuration("10xyz");
+        duration.getMillis();
     }
 }
