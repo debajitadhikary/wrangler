@@ -163,6 +163,27 @@ These directives are currently available:
 | [DDL](wrangler-docs/functions/ddl-functions.md)                                 | Functions that can manipulate definition of data                 |
 | [JSON](wrangler-docs/functions/json-functions.md)                               | Functions that can be useful in transforming your data           |
 | [Types](wrangler-docs/functions/type-functions.md)                              | Functions for detecting the type of data                         |
+## Byte Size and Time Duration Parsers
+
+### Overview
+Two new parsers handle byte sizes (e.g., KB, MB, GB) and time durations (e.g., ms, s, min) in CDAP Wrangler, enabling data transformations and aggregations.
+
+### Usage
+
+#### Parse Byte Size
+- Directive: `parse-byte-size <column>`
+- Example: `parse-byte-size data_transfer_size`
+- Description: Parses values like "10KB", "1.5MB" into bytes.
+
+#### Parse Time Duration
+- Directive: `parse-time-duration <column>`
+- Example: `parse-time-duration response_time`
+- Description: Parses values like "100ms", "2s" into nanoseconds.
+
+#### Aggregate Stats
+- Directive: `aggregate-stats <size-column> <time-column> <output-size-column> <output-time-column> <size-unit> <time-unit>`
+- Example: `aggregate-stats :data_transfer_size :response_time total_size_mb total_time_sec MB s`
+- Description: Aggregates total size (e.g., MB) and time (e.g., seconds) into new columns.
 
 ## Performance
 

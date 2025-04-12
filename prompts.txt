@@ -1,0 +1,38 @@
+Task 3a: Grammar Modification (Directives.g4):
+
+(1) "Add lexer rules for BYTE_SIZE and TIME_DURATION tokens in Directives.g4 for CDAP Wrangler"
+(2) "Modify parser rules in Directives.g4 to accept BYTE_SIZE and TIME_DURATION as directive arguments"
+(3) "Help regenerate ANTLR Java parser/lexer code for Wrangler after updating Directives.g4"
+-----------------------------------------------------------------------------------------------------------------------
+
+Task 3b: API Updates (wrangler-api):
+
+(1) "Create ByteSize.java class extending Token for parsing byte size strings like '10KB' in CDAP Wrangler"
+(2) "Create TimeDuration.java class extending Token for parsing time duration strings like '100ms' in CDAP Wrangler"
+(3) "Add BYTE_SIZE and TIME_DURATION token types to wrangler-api for CDAP Wrangler"
+(4) "Update token definitions in wrangler-api to support BYTE_SIZE and TIME_DURATION as valid directive arguments"
+-----------------------------------------------------------------------------------------------------------------------
+
+Task 3c: Core Parser Updates (wrangler-core):
+
+(1) "Add visit methods for byteSizeArg and timeDurationArg in Wrangler’s GrammarBasedParser for new token types"
+(2) "Modify Wrangler core parser to handle BYTE_SIZE and TIME_DURATION tokens using ctx.getText()"
+(3) "Update TokenGroup creation in wrangler-core to include ByteSize and TimeDuration tokens"
+-----------------------------------------------------------------------------------------------------------------------
+
+Task 3d: New Directive Implementation (AggregateStats):
+
+(1) "Implement aggregate-stats directive in CDAP Wrangler to sum byte sizes and time durations"
+(2) "Define UsageDefinition for aggregate-stats directive with size and time columns, output units in Wrangler"
+(3) "Fix compilation errors in AggregateStats.java for CDAP Wrangler implementing Executor interface"
+(4) "Fix finalize method error in AggregateStats.java to match CDAP Wrangler Executor interface with destroy()"
+(5) "Help debug Maven compilation errors for wrangler-core module with RecipeContext not found"
+-----------------------------------------------------------------------------------------------------------------------
+
+Task 3e: Testing:
+
+(1) "Write unit tests for ByteSize.java to verify parsing of '10KB', '1.5MB' in CDAP Wrangler"
+(2) "Write unit tests for TimeDuration.java to verify parsing of '5ms', '2.1s' in CDAP Wrangler"
+(3) "Update RecipeCompilerTest.java to test aggregate-stats directive parsing in CDAP Wrangler"
+(4) "Create AggregateStatsTest.java to test aggregation of byte sizes and time durations with TestingRig"
+(5) "Generate README.md section for byte size and time duration parsers in CDAP Wrangler"
