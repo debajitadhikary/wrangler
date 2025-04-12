@@ -140,8 +140,9 @@ numberRange
  ;
 
 value
- : String | Number | Column | Bool
+ : String | Number | Column | Bool | ByteSize | TimeDuration
  ;
+
 
 ecommand
  : '!' Identifier
@@ -273,6 +274,25 @@ String
  : '\'' ( EscapeSequence | ~('\'') )* '\''
  | '"'  ( EscapeSequence | ~('"') )* '"'
  ;
+
+/* Extended to support BYTE_SIZE and TIME_DURATION tokens */
+
+ByteSize
+: Digit+ ByteUnit
+;
+
+TimeDuration
+ : Digit+ TimeUnit
+ ;
+
+fragment ByteUnit
+ : ('KB' | 'MB' | 'GB')
+ ;
+
+fragment TimeUnit
+ : ('ms' | 's' | 'min')
+ ;
+
 
 EscapeSequence
    :   '\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')
