@@ -140,9 +140,16 @@ numberRange
  ;
 
 value
- : String | Number | Column | Bool | ByteSize | TimeDuration
+ : String | Number | Column | Bool | BYTE_SIZE | TIME_DURATION
  ;
 
+byteSizeArg
+ : BYTE_SIZE
+ ;
+
+timeDurationArg
+ : TIME_DURATION
+ ;
 
 ecommand
  : '!' Identifier
@@ -277,22 +284,26 @@ String
 
 /* Extended to support BYTE_SIZE and TIME_DURATION tokens */
 
-ByteSize
-: Digit+ ByteUnit
-;
-
-TimeDuration
- : Digit+ TimeUnit
+BYTE_SIZE
+ : NUMBER BYTE_UNIT
  ;
 
-fragment ByteUnit
- : ('KB' | 'MB' | 'GB')
+TIME_DURATION
+ : NUMBER TIME_UNIT
  ;
 
-fragment TimeUnit
- : ('ms' | 's' | 'min')
+fragment BYTE_UNIT
+ : [kK][bB] | [mM][bB] | [gG][bB] | [tT][bB] | [pP][bB] // KB, MB, GB, TB, PB
+ | [kK][iI][bB] | [mM][iI][bB] | [gG][iI][bB] | [tT][iI][bB] | [pP][iI][bB] // KiB, MiB, GiB, TiB, PiB
  ;
 
+fragment TIME_UNIT
+ : [mM][sS] | [sS] | [mM][iI][nN] | [hH] | [dD] // ms, s, min, h, d
+ ;
+
+fragment NUMBER
+ : [0-9]+ ('.' [0-9]+)? // Matches integers or decimals, like 10 or 1.5
+ ;
 
 EscapeSequence
    :   '\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')
