@@ -268,5 +268,5 @@ public class RecipeCompilerTest {
     Assert.assertEquals("MB", tokens.get(5).value());
     Assert.assertEquals("s", tokens.get(6).value());
     Assert.assertEquals(7, tokens.size());
-  }
+  } 
 }

@@ -1,0 +1,342 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2025-04-13T05:06:31+05:30
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 305
+
+Apache Licensed: 305
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/pom.xml
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/antlr4/io/cdap/wrangler/parser/Directives.g4
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/aggregates/DefaultTransientStore.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/aggregates/IncrementTransientVariable.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/aggregates/SetTransientVariable.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/ChangeColCaseNames.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/CleanseColumnNames.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/ColumnsReplace.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/Copy.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/CreateRecord.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/Drop.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/FlattenRecord.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/Keep.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/Merge.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/Rename.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/SetHeader.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/SetType.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/SplitToColumns.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/column/Swap.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/currency/FormatAsCurrency.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/currency/ParseAsCurrency.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/datamodel/DataModelMapColumn.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/date/DiffDate.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/date/FormatDate.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/datetime/CurrentDateTime.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/datetime/DateTimeToTimeStamp.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/datetime/FormatDateTime.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/datetime/TimestampToDateTime.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/external/InvokeHttp.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/language/SetCharset.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/lookup/CatalogLookup.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/lookup/StaticCatalog.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/lookup/TableLookup.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/nlp/internal/PorterStemmer.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/nlp/Stemming.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/CsvParser.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/FixedLengthParser.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/HL7Parser.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/JsParser.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/JsPath.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/ParseAvro.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/ParseAvroFile.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/ParseDate.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/ParseDateTime.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/ParseExcel.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/ParseLog.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/ParseProtobuf.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/ParseSimpleDate.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/parser/ParseTimestamp.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/row/Fail.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/row/Flatten.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/row/RecordConditionFilter.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/row/RecordMissingOrNullFilter.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/row/RecordRegexFilter.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/row/SendToError.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/row/SendToErrorAndContinue.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/row/SetRecordDelimiter.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/row/SplitToRows.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/CharacterCut.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/ColumnExpression.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/Decode.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/Encode.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/ExtractRegexGroups.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/FillNullOrEmpty.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/FindAndReplace.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/GenerateUUID.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/IndexSplit.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/LeftTrim.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/Lower.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/MaskNumber.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/MaskShuffle.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/MessageHash.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/Quantization.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/RightTrim.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/Split.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/SplitEmail.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/SplitURL.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/TextDistanceMeasure.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/TextMetricMeasure.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/TitleCase.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/Trim.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/Trimmer.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/Upper.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/UrlDecode.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/transformation/UrlEncode.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/validation/ConformanceIssue.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/validation/conformers/Conformer.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/validation/conformers/JsonConformer.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/validation/ValidateStandard.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/writer/WriteAsCSV.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/writer/WriteAsJsonMap.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/writer/WriteAsJsonObject.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/directives/xml/XmlToJson.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/functions/DataQuality.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/functions/DateAndTime.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/functions/Dates.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/functions/DDL.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/functions/GeoFences.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/functions/Global.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/functions/JsonFunctions.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/functions/Logical.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/functions/NumberFunctions.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/functions/Types.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/AggregateStats.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/clients/Response.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/clients/RestClientException.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/clients/SchemaInfo.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/clients/SchemaRegistryClient.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/codec/AbstractAvroDecoder.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/codec/BinaryAvroDecoder.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/codec/Decoder.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/codec/DecoderException.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/codec/JsonAvroDecoder.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/codec/ProtobufDecoderUsingDescriptor.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/datamodel/DataModelGlossary.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/datamodel/HTTPSchemaLoader.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/dq/ConvertDistances.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/dq/ConvertString.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/dq/DataType.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/dq/DateTimePattern.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/dq/TypeInference.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/executor/ErrorRecordCollector.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/executor/ICDCatalog.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/executor/RecipePipelineExecutor.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/expression/EL.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/expression/ELContext.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/expression/ELException.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/expression/ELRegistration.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/expression/ELResult.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/i18n/Messages.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/i18n/MessagesFactory.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/lineage/LineageOperations.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/metrics/Constants.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/metrics/JexlCategoryMetricUtils.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/parser/ConfigDirectiveContext.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/parser/DirectiveClass.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/parser/GrammarBasedParser.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/parser/GrammarWalker.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/parser/MapArguments.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/parser/MigrateToV2.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/parser/NoOpDirectiveContext.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/parser/RecipeCompiler.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/parser/RecipeVisitor.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/parser/SyntaxErrorListener.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/parser/UsageRegistry.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/registry/CompositeDirectiveRegistry.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/registry/DirectiveInfo.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/registry/DirectiveRegistry.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/registry/DirectiveScope.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/registry/SystemDirectiveRegistry.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/registry/UserDirectiveRegistry.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/sampling/Bernoulli.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/sampling/MathUtils.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/sampling/Poisson.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/sampling/Reservoir.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/sampling/Sampler.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/sampling/SamplingIterator.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/sampling/XORShiftRNG.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/schema/DirectiveOutputSchemaGenerator.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/schema/DirectiveSchemaResolutionContext.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/schema/TransientStoreKeys.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/statistics/BasicStatistics.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/statistics/ColumnMetric.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/statistics/Measurements.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/statistics/Statistics.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/ArithmeticOperations.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/ArtifactSummaryComparator.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/AvroSchemaGlossary.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/AvroSchemaLoader.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/ColumnConverter.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/DecimalTransform.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/JsonPathGenerator.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/KryoSerializer.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/Manifest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/ObjectSerDe.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/ProjectInfo.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/RecordConvertor.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/RecordConvertorException.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/ReferenceNames.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/RowHelper.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/SchemaConverter.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/StructuredRecordJsonConverter.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/StructuredToRowTransformer.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/utils/TypeConvertor.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/validator/ColumnNameValidator.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/validator/Validator.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/main/java/io/cdap/wrangler/validator/ValidatorException.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/aggregates/SetTransientVariableTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/column/ChangeColCaseNamesTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/column/CleanseColumnNamesTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/column/ColumnsReplaceTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/column/CopyTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/column/CreateRecordTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/column/FlattenRecordTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/column/KeepTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/column/MergeTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/column/RenameTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/column/SetHeaderTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/column/SetTypeTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/column/SplitToColumnsTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/currency/FormatAsCurrencyTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/currency/ParseAsCurrencyTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/datamodel/DataModelMapColumnTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/datetime/CurrentDateTimeTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/datetime/DateTimeToTimestampTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/datetime/FormatDateTimeTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/datetime/TimestampToDateTimeTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/external/InvokeHttpTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/lookup/CatalogLookupTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/npl/StemmingTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/parser/CsvParserTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/parser/FixedLengthParserTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/parser/HL7ParserTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/parser/JsParserTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/parser/JsPathTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/parser/ParseAvroFileTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/parser/ParseAvroTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/parser/ParseDateTimeTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/parser/ParseExcelTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/parser/ParseLogTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/parser/ParseSimpleDateTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/parser/XmlToJsonTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/row/FailTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/row/FlattenTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/row/RowConditionFilterTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/row/RowRegexFilterTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/row/SendToErrorAndContinueTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/row/SendToErrorTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/row/SplitToRowsTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/CharacterCutTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/EncodeDecodeTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/ExtractRegexGroupsTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/FillNullOrEmptyTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/FindAndReplaceTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/GenerateUUIDTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/LeftTrimTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/LowerTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/MaskNumberTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/MessageHashTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/ParseDateTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/ParseTimestampTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/QuantizationTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/RightTrimTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/SplitEmailTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/SplitURLTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/SwapTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/TextDistanceMeasureTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/TextMetricMeasureTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/TitleCaseTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/TrimTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/UpperTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/transformation/UrlEncodeTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/validation/conformers/JsonConformerTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/validation/ValidateStandardTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/writer/WriteAsCSVTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/writer/WriteAsJsonMapTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/directives/writer/WriteAsJsonObjectTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/functions/DataQualityTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/functions/DateAndTimeTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/functions/DDLTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/functions/ExpressionTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/functions/GeoFenceTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/functions/GlobalTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/functions/JsonFunctionsTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/functions/LogicalTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/functions/NumberFunctionsTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/AggregateStats.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/clients/SchemaRegistryClientTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/codec/BinaryAvroDecoderTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/codec/JsonAvroDecoderTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/codec/ProtobufDecoderUsingDescriptorTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/config/DirectiveConfigTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/datamodel/HTTPSchemaLoaderTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/dq/ConvertDistancesTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/dq/ConvertStringTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/executor/RecipePipelineExecutorTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/executor/SchemaGenerationTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/ExperimentTests.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/expression/ELTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/i18n/MessagesTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/lineage/LineageOperationsTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/parser/ConfigDirectiveContextTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/parser/GrammarBasedParserTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/parser/GrammarMigratorTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/parser/MapArgumentsTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/parser/MigrateToV2Test.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/parser/NoOpDirectiveContextTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/parser/RecipeCompilerTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/parser/UsageRegistryTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/registry/CompositeDirectiveRegistryTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/registry/SystemDirectiveRegistryTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/statistics/BasicStatisticsTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/TestingPipelineContext.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/TestingRig.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/utils/ArithmeticOperationsTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/utils/ArtifactSummaryComparatorTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/utils/AvroSchemaGlossaryTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/utils/JsonTestData.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/utils/KryoSerializerTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/utils/ObjectSerDeTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/utils/RecordConvertorTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/utils/ReferenceNamesTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/utils/SchemaConverterTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/utils/StructuredToRowTransformerTest.java
+  AL    C:/Users/DEBAJIT/Desktop/wrangler/wrangler-core/src/test/java/io/cdap/wrangler/validator/ColumnNameValidatorTest.java
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 
